@@ -1,0 +1,61 @@
+<!DOCTYPE ><html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="updateinit()">
+      <h1 class="title" >Library Management System</h1> 
+      <h2 style="color: green;" >Update Table</h2> 
+            
+<div>
+            <table id="table">
+                <thead>
+                  <tr class="tableheading">
+                        <th>Number</th>
+                        <th>BookName</th>
+                        <th>Author</th>
+                         <th>Publisher</th>
+                           <th>Date</th>
+                           <th>Action</th>     
+                  </tr>
+                </thead>
+            
+                <tbody id="updatebooktable">
+                <tr>    </tr>
+                </tbody>
+            </table>
+            
+</div>
+<br>
+<form style="border: 10px solid black; padding: 10px;">
+        
+        <input id="booknameinput"  type="text" placeholder="Book Name" value="" style="width: 100%; height: 3%;">
+  <br>
+  <br>
+        <input  id="authornameinput" type="text" placeholder="Author Name" value="" style="width: 100%; height: 3%;">
+  <br>
+  <br>
+        <input  id="publishernameinput" type="text" placeholder="Publisher Name" value="" style="width: 100%; height: 3%;">
+  <br>
+  <br>
+        <input  id="dateinput" type="date" value="" style="width: 100%; height: 3%;">
+</div> 
+<br>
+<br>
+<button id="submit"  onclick="addData()" value="book Added">Add Book</button> 
+
+
+</form>
+
+<button   onclick="clearfields()" value="Clear ">Clear</button> 
+
+<br>
+<br>
+<a href="/index.html"><button >Go back</button> </a>
+
+
+
+        </body>
+        <script src="javascript.js"></script>
+</html>
+
